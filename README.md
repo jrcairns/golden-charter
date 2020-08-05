@@ -40,7 +40,7 @@ export const getImages = (limit = 50) => {
     return axios(`https://picsum.photos/v2/list?limit=${limit}`)
 }
 ```
-Once our images are displayed, we have a Details button, which links to ``` /image/:id ```. Here we fire off another API function to get info on a single image, and display is accordingly:
+Once our images are displayed, we have a Details button, which links to ``` /image/:id ```. Here we fire off another API function to get info on a single image, and display it accordingly:
 ```
 export const getImageById = id => {
     return axios(`https://picsum.photos/id/${id}/info`)
